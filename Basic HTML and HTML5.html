@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<!-- Metadara elements such as links, meta, title, and style, typically go inside the head element -->
+      <head>
+            <meta charset="utf-8">
+            <title></title>
+      </head>
+      <body>
+            <!--
+            HTML5 introduces more descriptive HTML tags. These include main, header, footer, nav, video, article, section and others.These tags give a descriptive structure to your HTML, make your HTML easier to read, and help with Search Engine Optimization (SEO) and accessibility. The main HTML5 tag helps search engines and other developers find the main content of your page.-->
+
+            <!-- Image Tag -->
+              <img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+
+            <!-- Creating a link to an external page with Anchor Elements, use target="blank" causes the linked document to open in a new window tab. Create a link to an internal link by changing the "href" attribute and give an ID  to the element link is directed to -->
+              <a href="https://freecatphotoapp.com" target="_blank">cat photos</a>
+            
+              <h2>CatPhotoApp</h2>
+              <main>
+              <!-- Nested link within paragraph -->
+                <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+                <!-- Nested link within image -->
+                <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+                <p>Things cats love:</p>
+
+                <!-- Unordered list -->
+                <ul>
+                  <li>cat nip</li>
+                  <li>laser pointers</li>
+                  <li>lasagna</li>
+                </ul>
+                <p>Top 3 things cats hate:</p>
+
+                <!-- Ordered list -->
+                <ol>
+                  <li>flea treatment</li>
+                  <li>thunder</li>
+                  <li>other cats</li>
+                </ol>
+
+              <!-- Using a form element will allow you to submit data to a server -->
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+
+                <!-- Using radio buttons that are nested within its own label element. By wrapping input element inside of a label element it will automatically associate the radio button input with the label element surrounding it.
+                It is considered best practice to set a for attribute on the label element, with a value that matches the value of the id attribute of the input element. This allows assistive technologies to create a linked relationship between the label and the child input element.
+                -Use radio or checkbox as type depending on what you want. Use checked if you want button to be checked by default.
+                 -->
+
+                  <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+                  <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+                  <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+                  <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+                  <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+                  <input type="text" placeholder="cat photo URL" required>
+                  <button type="submit">Submit</button>
+                </form>
+              </main>
+
+      </body>
+</html>
